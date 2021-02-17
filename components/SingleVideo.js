@@ -11,7 +11,7 @@ const SingleVideo = ({playbackUrl}) => {
           uri: playbackUrl,
         }}
         paused={ispaused}
-        onError={(e) => console.log(e)} // getting error here : {"error": {"extra": -1004, "what": 1}}
+        onError={(e) => console.log(e)} // getting error here for some videos : {"error": {"extra": -1004, "what": 1}}
         resizeMode={'cover'}
         repeat={true}
         style={styles.backgroundVideo}
